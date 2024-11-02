@@ -19,8 +19,9 @@ class RecipeController extends AbstractController
     public function show(Request $request, string $slug, int $id): Response
     {
 
-        return $this->json([
-            'slug' => $slug
+        return $this->render('recipe/show.html.twig', [
+            'slug' => $slug,
+            'id' => $id
         ]);
     }
 }
