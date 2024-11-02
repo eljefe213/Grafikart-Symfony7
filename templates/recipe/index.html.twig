@@ -2,7 +2,12 @@
 
 {% block title "Toutes les recettes" %}
 {% block body %}
-
-Salut le monde des terriens !! 
-
+<p>
+    Le site des meilleures recettes del mondo !!
+</p>
+<ul>
+    <li>
+        <a href="{{ url('recipe.show', {id: 1, slug: 'pate-bolognaise'}) }}">Pates bolognaise</a>
+    </li>
+</ul>
 {% endblock %}
